@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ply.css" />
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let board = document.getElementById("board");
+    for (let i = 10; i >= 1; i--)
+ {
+      let newRow = document.createElement("div");
+      newRow.classList.add("row");
+      board.appendChild(newRow);
+      for (let j = 10; j >= 1; j--)
+ {
+        let numbers = i * 10 - 10 + j;
+        let color = numbers;
+          numbers = i * 10 - j + 1
+        let span = document.createElement("span");
+        span.classList.add("square");
+        span.setAttribute("id", "a" + numbers);
+        span.textContent = numbers;
+        newRow.appendChild(span);
+        console.log(span);
+        console.log(numbers)
+      }
+    } </script>
+</body>
+</html>

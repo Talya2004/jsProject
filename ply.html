@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ply.css" />
+    
+     <!-- <input type="button"  name="s1"  value="start" onclick="str"/>   -->
+  <div id="f"></div> 
+<div id="p"></div>
+<div id="result"></div>
+<div id="wrapper">
+  
+    <p id="stars"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></p>
+    <p id="title" contenteditable="true" spellcheck="false"><span>CSS</span><span>3</span><span>D</span></p>
+    <p id="slogan"><span>Popcorn</span> for your <span>text</span>.</p>
+    
+  </div>
+  
+  
+  <div id="meta">
+    <a href="http://en.wikipedia.org/wiki/File:Anaglyph_glasses.png"><img src="https://s.cdpn.io/79/3D-glasses.png" alt="3D Glasses" /> 3D red-cyan glasses</a> recommended.</p>
+  </div>
+</head>
+<body>
+    <script>
+let rand,rand2,x;
+        var row,col;
+        document.write("<table>");
+       for(let row=0; row<=6; row++){
+            document.write("<tr>");
+                 for(let col=0; col<=6; col++){
+                    let num=row*6-6+col;
+                    rand=Math.floor(Math.random() *50); 
+                  
+              let span=  "<td  width=70px height=70px >" +rand+"</td>";
+                    span.setAttribute("id", "a" + num);
+document.write(span)
+    }}
+ document.write("<table>")
+   
+    rand2=Math.floor(Math.random() *50);   
+   document.getElementById("p").innerText=rand2;
+//    if(event.target(rand).onmouseover=rand2){
+//     document.getElementById("result").innerHTML=10;
+//    }
+
+
+
+
+
+
+// if(document.getElementById("td").onmouseover==rand2){
+//     document.getElementById("result").innerText=rand2;
+// }
+
+
+    
+     
+    // function str(){
+    //     rand2=Math.floor(Math.random() *50); 
+    // document.getElementById("f").innerHTML=rand2;
+    // }
+   
+     
+   
+    </script>
+    
+</body>
+</html>
